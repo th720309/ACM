@@ -1,0 +1,71 @@
+#include<iostream>
+#include<cstdio>
+using namespace std;
+#define N 1009
+int use[N];
+int num[N];
+void dfs(int n,int t){           t:num[]中准备存放的第t-1个数
+    if(t==n){
+		for(int i=0;i<n;i++){
+		    printf("%d ",num[i]);
+		}
+		printf("\n");
+	    //return ;
+	}
+	for(int i=1;i<=n;i++){
+		if(use[i]==0){
+		    use[i] = 1;
+		    num[t]=i;
+	            dfs(n,t+1);
+		    use[i] = 0;
+		}
+	}
+}
+int main(){
+    int n;
+	while(scanf("%d",&n)!=EOF){ 
+		dfs(n,0);
+	}
+	return 0;
+}
+
+
+
+#include<iostream>
+#include<cstdio>
+#define N 1009
+int num[N]={0,1,2,3,4,5,6,7};
+int vis[N],ans[N];
+int check(int id,int i){
+    for(int k=1;k<=id-1;k++){
+        if(ans[k]==i&&(id-k-1==i)) return 1;
+    }
+return 0;
+}
+void dfs(int id,int n){
+    if(id==2*n+1){
+        for(int i=1;i<=2*n;i++)
+            printf("%d",ans[i]);
+        printf("\n");
+        return;
+    }
+    for(int i=1;i<=n;i++){
+        if(vis[i]==0){
+            vis[i]=1;
+            ans[id]=num[i];
+            dfs(id+1,n);
+            vis[i]=0;
+    }
+    if(vis[i]==1&&check(id,i)==1){
+        vis[i]=2;
+        ans[id]=num[i];
+        dfs(id+1,n);
+        vis[i]=1;
+    }
+}
+}
+int main(){
+    int n;
+    dfs(1,7);
+}
+

@@ -1,0 +1,46 @@
+***********************************全源最短路径Floyd算法O(n*n*n)***************************************
+#define N 1100
+int g[N][N];
+void Floyd(){
+     //k是枚举的中间节点
+    for(int k = 1;k<=n;k++)｛
+    	for(int i = 1;i<=n;i++){
+	    for(int j = 1;j<=n;j++){
+		if(g[i][j]>g[i][k] + g[k][j])
+		    g[i][j] = g[i][k] + g[k][j];
+	    }
+        }
+    ｝
+}
+
+
+*****************************单源最短路径Dijkstra算法 O(n*n）**********************************
+#define INF 0x0f0f0f0f //用INF来代替正无穷（+OO）
+#define N 1100
+int low[N];  //low[i]数组存放A号节点到已知集合中i号节点的最短距离
+int vis[N];  //vis[i] = 1表示i号节点已经在已知集合中，否则反之
+int cost[N][N],n;//cost[i][j]表示i节点到j节点的直接距离
+void Dijkstra(int start){
+    int edge,k;
+    for(int i = 1;i<=n;i++){//这里是要初始化low[]数组和vis[]数组
+	low[i] = cost[start][i];
+	vis[i] = 0;
+    }
+    vis[start] = 1;
+    low[start] = 0;
+    for(int i = 1;i<=n-1;i++){
+	edge = INF;//edge是已知集合到未知集合的最短边
+        for(int j = 1;j<=n;j++){//这里是要找到一条最短边:编号k,边长edge
+	    if(vis[j]==0&&edge>low[j]){
+		edge = low[j];
+		k = j;
+	    } 
+	}
+	vis[k] = 1;
+	for(int j = 1;j<=n;j++){//更新得到的新节点k号节点发出去的边
+	    if(vis[j]==0&&low[j] > low[k] + cost[k][j]){
+		low[j] = low[k] + cost[k][j];
+	    }
+	}
+    }
+}

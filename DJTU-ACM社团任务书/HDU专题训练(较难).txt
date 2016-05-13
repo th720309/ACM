@@ -1,0 +1,286 @@
+就是DIY上的专题训练
+
+
+【背包问题】
+2602	Bone Collector	      	
+1114	Piggy-Bank	      
+1203	I NEED A OFFER!	 	
+1171	Big Event in HDU	
+1059	Dividing	 	
+2844	Coins	 		
+2191	悼念512汶川大地震遇难同胞——珍惜现在，感恩生活	 
+2159	FATE	
+1561	The more, The Better	
+1011	Starship Troopers	 
+2639	Bone Collector II	 
+3033	I love sneakers!	
+2955	Robberies	
+2546	饭卡	
+2415	Bribing FIPA	 
+1712	ACboy needs your help	
+3535	AreYouBusy	
+3449	Consumer
+
+【线段树+树状数组】
+2688	Rotate	 
+2838	Cow Sorting	 
+3015	Disharmony Trees	
+3030	Increasing Speed Limits	 
+2227	Find the nondecreasing subsequences	 
+3450	Counting Sequences	 
+3465	Life is a Line	 
+1541	Stars	 
+2642	Stars	 
+1166	敌兵布阵	 
+3458	Rectangles Too!	
+1542	Atlantis	 
+1828	Picture	 
+3016	Man Down	
+1255	覆盖的面积	 
+2871	Memory Control	 
+1698	Just a Hook	 
+1394	Minimum Inversion Number	 
+1823	Luck and Love	
+3397	Sequence operation	
+2795	Billboard	
+1540	Tunnel Warfare	 
+1779	9-Problem C	
+1543	Paint the Wall	 
+3536	Painting
+
+【DP优化】
+
+2577	How to Type	 
+1513	Palindrome	 
+1025	Constructing Roads In JGShining's Kingdom	
+3351	Seinfeld	 
+1978	How many ways	 
+2686	Matrix	 
+3376	Matrix Again	
+3392	Pie	 
+1422	重温世界杯	 
+1505	City Game	
+1506	Largest Rectangle in a Histogram	 
+2870	Largest Submatrix	 
+2830	Matrix Swapping II	 
+1024	Max Sum Plus Plus	
+1244	Max Sum Plus Plus Plus	 
+1227	Fast Food	 
+1793	Minimal search cost	 
+2829	Lawrence	 
+3415	Max Sum of Max-K-sub-sequence	 
+3401	Trade	 
+3276	Star	
+3045	Picnic Cows	
+2993	MAX Average Problem
+
+http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=3756 
+有助理解"状态"的推荐题目,今年省赛金牌题
+Bridging signals http://acm.pku.edu.cn/JudgeOnline/problem?id=1631
+LIS优化
+Group http://acm.hust.edu.cn/thx/problem.php?id=1351
+Group2 http://acm.hust.edu.cn/thx/problem.php?id=1369
+MiniCost http://acm.fzu.edu.cn/problem.php?pid=1880
+
+http://acm.pku.edu.cn/JudgeOnline/problem?id=2823 
+学习单调队列的推荐题目
+
+Fence http://acm.pku.edu.cn/JudgeOnline/problem?id=1821 
+单调队列
+
+Batch Scheduling http://acm.pku.edu.cn/JudgeOnline/problem?id=1180
+单调队列,优化斜率
+
+Post office http://acm.pku.edu.cn/JudgeOnline/problem?id=1160 
+四边形不等式优化
+
+http://acm.pku.edu.cn/JudgeOnline/problem?id=3017
+单调队列优化
+
+http://acm.pku.edu.cn/JudgeOnline/problem?id=3709
+单调队列,优化斜率
+
+【网络流】
+1532	Drainage Ditches	
+1533	Going Home	
+1853	Cyclic Tour	 
+3081	Marriage Match II	 
+3277	Marriage Match III	 
+3416	Marriage Match IV	 
+3315	My Brute	
+3376	Matrix Again	 
+3313	Key Vertex	 
+3338	Kakuro Extension	
+1565	方格取数(1)	 
+1569	方格取数(2)	 
+2686	Matrix	 
+3395	Special Fish	 
+2448	Mining Station on the Sea	 
+3035	War	 
+3046	Pleasant sheep and big big wolf	 
+3251	Being a Hero	
+1733	Escape	 
+2883	kebab	 
+2732	Leapin' Lizards	 
+3061	Battle	
+3157	Crazy Circuits	
+http://acm.pku.edu.cn/JudgeOnline/problem?id=3762
+
+http://acm.xtu.edu.cn/OnlineJudge/index.php/problem/read/id/1491
+
+http://acm.pku.edu.cn/JudgeOnline/problem?id=2987
+
+http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=2314
+
+http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=1992
+
+Poj2914：http://acm.pku.edu.cn/JudgeOnline/problem?id=2914
+（stoer-Wagner）
+
+http://acm.pku.edu.cn/JudgeOnline/problem?id=3308
+
+SGU 176 http://acm.sgu.ru/problem.php?contest=0&problem=176
+
+容量有上下界的网络流问题，有难度
+
+
+http://hi.baidu.com/daizhy_acm/blog/item/c3e63252763ae66984352480.html
+这里有个题目分类，有兴趣的话，可以去刷~ 
+
+http://www.notonlysuccess.com/?p=217
+胡浩的博客上也有点东西~
+可以去看看~
+
+PPT更新地址： http://www.starvae.com/work/%e9%9b%86%e8%ae%ad%e9%98%9f%e8%ae%b2%e5%ba%a7%e7%ac%ac%e4%b9%9d%e8%ae%b2--%e7%bd%91%e7%bb%9c%e6%b5%81.ppt
+
+
+
+【字符匹配】
+1711	Number Sequence	 
+1867	A + B for you again	 
+3374	String Problem	 
+3336	Count the string	
+1075	What Are You Talking About	
+1251	统计难题	 
+1671	Phone List	
+1247	Hat’s Words	 
+1800	Flying to the Mars	 
+2072	单词数	
+2222	Keywords Search	 
+2896	病毒侵袭	 
+3065	病毒侵袭持续中	 
+2243	考研路茫茫——单词情结	 
+2825	Wireless Password	
+2296	Ring	
+3341	Lost's revenge	 
+3247	Resource Archiver
+
+
+【最短路】
+2544	最短路	
+2066	一个人的旅行	 
+2112	HDU Today	 
+1874	畅通工程续	 
+1142	A Walk Through the Forest	
+1385	Minimum Transport Cost	 
+1548	A strange lift	 
+1217	Arbitrage	 
+2680	Choose the best route	 
+2923	Einbahnstrasse	 
+2962	Trucking	 
+2722	Here We Go(relians) Again	
+1690	Bus System	 
+2482	Transit search	 
+1596	find the safest road	
+1598	find the most comfortable road	 
+2377	Bus Pass	 
+2363	Cycling	 
+2433	Travel	 
+1688	Sightseeing	 
+2833	WuKong	
+3191	How Many Paths Are There	
+
+
+
+【数据结构问题】
+http://124.205.79.250/JudgeOnline/problem?id=1456 Supermarket
+
+http://124.205.79.250/JudgeOnline/problem?id=3228 Gold Transportation
+
+http://124.205.79.250/JudgeOnline/problem?id=1182 食物链
+
+http://124.205.79.250/JudgeOnline/problem?id=1733 Parity game
+
+http://124.205.79.250/JudgeOnline/problem?id=1417 True Liars
+
+http://124.205.79.250/JudgeOnline/problem?id=2912 Rochambeau
+
+http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=3261 Connections in Galaxy War
+
+http://124.205.79.250/JudgeOnline/problem?id=3264 Balanced Lineup(RMQ模板题)
+
+1829	A Bug's Life	 
+1272	小希的迷宫	
+1325	Is It A Tree?	 
+1558	Segment set	
+1598	find the most comfortable road	 
+3461	Code Lock	 
+3367	Pseudoforest	 
+2473	Junk-Mail Filter	 
+3172	Virtual Friends	 
+3047	Zjnu Stadium	 
+3038	How Many Answers Are Wrong	
+2818	Building Block	 
+3234	Exclusive-OR	
+2586	How far away ？	
+2874	Connections between cities	
+3486	Interviewe	
+2888	Check Corners	
+
+
+【矩阵乘法】
+1575	Tr A	
+1757	A Simple Math Problem	 
+2254	奥运	 
+2256	Problem of Precision	
+1558	Gauss Fibonacci	 
+2604	Queuing	 
+2276	Kiki & Little Kiki 2	
+2855	Fibonacci Check-up	 
+2971	Tower	 
+2294	Pendant	
+3117	Fibonacci Numbers	 
+2842	Chinese Rings	
+3519	Lucky Coins Sequence	
+3509	Buge's Fibonacci Number Problem	 
+3524	Perfect Squares	 
+3483	A Very Simple Problem	
+
+【搜索专题】
+1253	胜利大逃亡	 
+1072	Nightmare	
+1495	非常可乐	 
+2757	Ocean Currents	
+1026	Ignatius and the Princess I	
+1728	逃离迷宫	 
+1401	Solitaire	
+1175	连连看	
+1016	Prime Ring Problem	
+2809	God of War	
+1043	Eight	 
+1667	The Rotation Game	
+1547	Bubble Shooter	 
+2216	Game III	 
+2364	Escape	 
+2822	Dogs	 
+1983	Kaitou Kid - The Phantom Thief (2)	 
+2821	Pusher	 
+2782	The Worm Turns	 
+2234	无题I	
+1560	DNA sequence	 
+1813	Escape from Tetris	 
+2517	棋盘分割	 
+2416	Treasure of the Chimp Island	 
+1226	超级密码	 
+2579	Dating with girls(2)
+

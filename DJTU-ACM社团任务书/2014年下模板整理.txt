@@ -1,0 +1,144 @@
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <cmath>
+using namespace std;
+#define N 1009
+#define inf 0x0f0f0f0f
+//最大公约数
+int gcd(int a,int b){
+    if(b==0) return a;
+    else return gcd(b,a%b);
+}
+//最小公倍数
+int lcm(int a,int b){
+    return a/gcd(a,b)*b;
+}
+//快速幂
+int Fast(int x,int n){
+    int tem = x,ans = 1;
+    while(n){
+        if(n%2==1) ans*=tem;
+        tem *= tem;
+        n >>= 1;
+    }
+    return ans;
+}
+//筛素数
+int prim[N],top = 0;
+void get_prim(){
+    bool vis[N];
+    top = 0;
+    memset(vis,1,sizeof(vis));
+    for(int i = 2;i<N;i++){
+        if(vis[i]){
+            prim[top++] = i;
+            if(i>(int)sqrt(N)) continue;
+            for(int j = i*i;j<N;j+=i)
+                vis[j] = 0;
+        }
+    }
+}
+//Floyd算法
+int g[N][N];
+void Floyd(int n){
+    for(int k = 1;k<=n;k++)
+    for(int i = 1;i<=n;i++)
+    for(int j = 1;j<=n;j++){
+        if(g[i][j]>g[i][k]+g[k][j])
+            g[i][j] = g[i][k] + g[k][j];
+    }
+}
+//单源最短路径
+//int g[N][N];
+int dis[N];
+int Dijkstra(int n,int star,int g[][N]){
+    int vis[N];
+    for(int i  = 1;i<=n;i++){
+        dis[i] = g[star][i];
+        vis[i] = 0;
+    }
+    dis[star] = 0;
+    vis[star] = 1;
+    for(int i  =1;i<=n;i++){
+        int edge = inf,k = 0;
+        for(int j = 1;j<=n;j++){
+            if(vis[j]==0&&edge>dis[j]){
+                edge = dis[j];
+                k = j;
+            }
+        }
+        if(edge==inf) return -1;
+        vis[k] = 1;
+        for(int j = 1;j<=n;j++){
+            if(vis[j]==0&&dis[j]>dis[k]+g[k][j]){
+                dis[j] = dis[k] + g[k][j];
+            }
+        }
+    }
+    return 1;
+}
+//简单并查集
+int f[N];
+int ans;
+void init(int n){
+    for(int i = 1;i<=n;i++)
+        f[i] = i;
+    ans = 0;
+}
+int find(int x){
+    if(f[x]==x) return x;
+    else return f[x] = find(f[x]);
+}
+void Union(int a,int b){
+    int f1 = find(a);
+    int f2 = find(b);
+    if(f1!=f2){
+       f[f1] = f2;
+       ans++;
+    }
+}
+//计算排列组合
+int c[N][N];
+void Com(){
+    memset(c,0,sizeof(c));
+    for(int i = 1;i<N;i++){
+        c[i][0] = c[i][i] = 1;
+        for(int j = 1;j<i;j++){
+            c[i][j] = c[i-1][j] + c[i-1][j-1];
+        }
+    }
+}
+void Test1(){
+    get_prim();
+    Com();
+    printf("gcd==%d\n",gcd(12,3));
+    printf("fast===%d\n",Fast(2,3));
+    printf("Prim===%d\n",prim[4]);
+    printf("Com===%d\n",c[12][3]);
+}
+void Test2(){
+    int n,m,a,b,c;
+    printf("Dijkstra算法测试\n");
+    while(~scanf("%d%d",&n,&m)){
+        memset(g,inf,sizeof(g));
+        //printf("%d\n",g[1][2]);
+        for(int i = 0;i<=n;i++) g[i][i] = 0;
+        for(int i = 1;i<=m;i++){
+            scanf("%d%d%d",&a,&b,&c);
+            if(g[a][b]>c){
+                g[a][b] = g[b][a] = c;
+            }
+        }
+        Dijkstra(n,1,g);
+        for(int i = 1;i<=n;i++){
+            printf("1 -> %d = %d\n",i,dis[i]);
+        }
+        printf("\n");
+    }
+}
+int main(){
+    Test1();
+    Test2();
+    return 0;
+}
